@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - School Of Commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-school">School</span>
+                    <span class="logo-of">Of</span>
+                    <span class="logo-commerce">Commerce</span>
+                </a>
+            </div>
+            
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+        </div>
+
+        <div class="mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="contact-hero">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us for any queries</p>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-grid">
+                <div class="contact-card fade-in">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p class="contact-info">Available Monday to Saturday</p>
+                    <a href="tel:+919356009356" class="contact-link">+91 93560 09356</a>
+                    <a href="tel:+919356009356" class="contact-link">+91 93561 19356</a>
+                </div>
+
+                <div class="contact-card fade-in">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                        </svg>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p class="contact-info">Quick responses on WhatsApp</p>
+                    <a href="https://wa.me/919356009356" class="contact-link whatsapp-link">Message Us</a>
+                </div>
+
+                <div class="contact-card fade-in">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p class="contact-info">
+                        SCO 29, Top Floor, Sector 20 D<br>
+                        Dakshin Marg, Chandigarh
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2 class="section-title">Send us a Message</h2>
+            <form class="contact-form fade-in" action="https://formsubmit.co/rakeshjain.chandigarh@gmail.com" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+
+                <input type="hidden" name="_captcha" value="false">
+
+            </form>
+        </section>
+        
+
+        <section class="map-section">
+            <h2 class="section-title">Our Location</h2>
+            <div class="map-container fade-in">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3429.9774272926766!2d76.77245377585764!3d30.719034974590905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed04152fc95f%3A0x2b11e8fa811a9f62!2sSchool%20Of%20Commerce%20-%20Best%20Commerce%20Classes%20In%20Chandigarh!5e0!3m2!1sen!2sin!4v1739685335759!5m2!1sen!2sin"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>School Of Commerce</h3>
+                <p>A Step Towards Success</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>SCO 29, Top Floor, Sector 20 D</p>
+                <p>Dakshin Marg, Chandigarh</p>
+                <p>Phone: 93560 09356</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/schoolofcommerce.chandigarh/" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="currentYear">2024</span> School Of Commerce. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMenu() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            mobileMenu.classList.toggle('active');
+            
+            const menuIcon = document.querySelector('.menu-icon');
+            const isOpen = mobileMenu.classList.contains('active');
+            
+            if (isOpen) {
+                menuIcon.innerHTML = `
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                `;
+            } else {
+                menuIcon.innerHTML = `
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                `;
+            }
+        }
+
+        // Update current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Intersection Observer for fade-in animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+</body>
+</html>

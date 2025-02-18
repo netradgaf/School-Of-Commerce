@@ -1,0 +1,261 @@
+/* Course Header */
+.course-header {
+    background: linear-gradient(to right, #2563eb, #1d4ed8);
+    color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.course-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.course-header p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+/* Course Categories */
+.course-categories {
+    padding: 4rem 1rem;
+}
+
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.category-tab {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #f97316;
+    border-radius: 0.5rem;
+    background: none;
+    color: #f97316;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category-tab:hover {
+    background: #fff7ed;
+}
+
+.category-tab.active {
+    background: #f97316;
+    color: white;
+}
+
+/* Course Grid */
+.course-section {
+    display: none;
+}
+
+.course-section.active {
+    display: block;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.course-card {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background: #fff7ed;
+    color: #f97316;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.course-card h3 {
+    color: #1e293b;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.course-card p {
+    color: #64748b;
+    margin-bottom: 1.5rem;
+}
+
+/* Course Details */
+.course-details {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.detail .label {
+    color: #64748b;
+    font-weight: 500;
+}
+
+/* Course Fee */
+.course-fee {
+    background: #f8fafc;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.fee-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.fee-option:last-child {
+    margin-bottom: 0;
+}
+
+.fee-label {
+    color: #64748b;
+    font-weight: 500;
+}
+
+.fee-amount {
+    color: #f97316;
+    font-weight: 600;
+}
+
+/* Additional Information */
+.course-info {
+    background: #f8fafc;
+    padding: 4rem 1rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.info-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h3 {
+    color: #f97316;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.info-card ul {
+    list-style: none;
+}
+
+.info-card li {
+    color: #64748b;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.info-card li:before {
+    content: "•";
+    color: #f97316;
+    position: absolute;
+    left: 0;
+}
+
+/* Fee Notes */
+.fee-notes {
+    padding: 4rem 1rem;
+}
+
+.note-card {
+    background: #fff7ed;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #fed7aa;
+}
+
+.note-card h3 {
+    color: #f97316;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.note-card ul {
+    list-style: none;
+}
+
+.note-card li {
+    color: #9a3412;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.note-card li:before {
+    content: "•";
+    color: #f97316;
+    position: absolute;
+    left: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .course-header h1 {
+        font-size: 2rem;
+    }
+
+    .category-tabs {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .category-tab {
+        text-align: center;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .course -card:hover {
+    transform: none;
+}
+
+.fade-in {
+    transition: none;
+}
+}
